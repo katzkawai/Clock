@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 1s ease;
+}
+
+.clock-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+.clock {
+    font-size: 4em;
+    font-weight: bold;
+    color: #333;
+    transition: color 1s ease;
+}
+
+/* Time-based styles (examples) */
+body.morning {
+    background-color: #ffe0b2; /* Light orange */
+}
+.clock-container.morning {
+    background-color: #fff3e0;
+    box-shadow: 0 10px 30px rgba(255, 160, 0, 0.2);
+}
+.clock.morning {
+    color: #ff9800; /* Orange */
+}
+
+body.afternoon {
+    background-color: #bbdefb; /* Light blue */
+}
+.clock-container.afternoon {
+    background-color: #e3f2fd;
+    box-shadow: 0 10px 30px rgba(33, 150, 243, 0.2);
+}
+.clock.afternoon {
+    color: #2196f3; /* Blue */
+}
+
+body.evening {
+    background-color: #c5cae9; /* Light indigo */
+}
+.clock-container.evening {
+    background-color: #e8eaf6;
+    box-shadow: 0 10px 30px rgba(63, 81, 181, 0.2);
+}
+.clock.evening {
+    color: #3f51b5; /* Indigo */
+}
+
+body.night {
+    background-color: #424242; /* Dark grey */
+}
+.clock-container.night {
+    background-color: #616161;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.clock.night {
+    color: #e0e0e0; /* Light grey */
+}
